@@ -1,5 +1,5 @@
 {
-  "name": "libclient",
+  "name": "igorisp/libclient",
   "type": "library",
   "description": "PSR-7 implementation that contains some methods",
   "keywords": ["request", "response", "psr-7"],
