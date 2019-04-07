@@ -1,0 +1,51 @@
+{
+  "name": "lib-client",
+  "type": "library",
+  "description": "PSR-7 implementation that contains some methods",
+  "keywords": ["request", "response", "psr-7"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Igor Ispir",
+      "email": "ispir.igor@gmail.com",
+      "homepage": "https://github.com/IgorIsp"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=7.1.0",
+    "roave/security-advisories": "dev-master",
+    "psr/http-message": "~1.0",
+    "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8",
+    "ext-zlib": "*"
+  },
+  "provide": {
+    "psr/http-message-implementation": "1.0"
+  },
+  "suggest": {
+    "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
+  },
+  "autoload": {
+    "psr-4": {
+      "LibClient\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LibClient\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.5-dev"
+    }
+  },
+  "scripts": {
+    "test": "phpunit --color=always"
+  }
+}
